@@ -8,7 +8,7 @@ Summary: A short document on how to get up and running with the Python API
 2.	Paste the .pyd library into your K-Spice install bin64
 	«C:\Program Files (x86)\Kongsberg\K-Spice\bin64»
 
-#Importing the K-Spice Module into Python
+# Importing the K-Spice Module into Python
 
 ```python
 import sys
@@ -34,23 +34,14 @@ timeline = sim.activate_timeline("Engineering")
 ```
 
 All other API calls are made on the timeline object, the hierachy is as follows:
-::: mermaid
-graph TD;
-    Simulator-->Timeline;
-    Timeline-->Application;
-    Application-->Block;
-    Block-->Variable;
-    Block-->BlockConnection;
-    Block-->BlockState;
-    Timeline-->ModelFile;
-    Timeline-->ParameterFile;
-    Timeline-->InitialConditionFile;
-    Timeline-->HistoryFile;
-    Timeline-->SnapshotFile;
-:::
-
+![Class Hierachy Diagram](PythonClassHierachy.png)
 Example scripts can be found in the repository.
 
+# Architecture
+The python API acts as a wrapper for the K-Spice SimulationManager process.
+This means you can not interact with the front-end of K-Spice. However, the SimExplorer.exe process can be started in addition to the running python process invoking simulation manager, and you can connect to the simulation manager in the usual way through tcp/ip on port 16000.
 
-For the full spectrum of available commands and functions refer to the python documentation, that follow the K-Spice python api.
+![K-Spice Architecture](SoftwareComponents.svg)
+
+For the full spectrum of available commands and functions refer to the python documentation, that follow the version specific html documentation following the K-Spice python api.
 docs -> index.html
