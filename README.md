@@ -4,9 +4,11 @@ Summary: A short document on how to get up and running with the Python API
 > **NOTE:** The API is under active development. The guide provided here might not be compatible with the K-Spice version you are running. Built-in Python [help](https://docs.python.org/3/library/functions.html#help) function will give up to date info about functions and types in the K-Spice module.
 
 # Installation
-1.	Copy the API file from the internal tools [in the KSpice built](https://artprodsu6weu.artifacts.visualstudio.com/A7e7d63c7-ba47-433d-affd-94b30e159ada/c918a51b-bf39-432a-ad36-0d1840f6bf79/_apis/artifact/cGlwZWxpbmVhcnRpZmFjdDovL2tvZ25pZmFpL3Byb2plY3RJZC9jOTE4YTUxYi1iZjM5LTQzMmEtYWQzNi0wZDE4NDBmNmJmNzkvYnVpbGRJZC8zMzk3OTcvYXJ0aWZhY3ROYW1lL0ludGVybmFsVG9vbHM1/content?format=zip&subPath=%2Fpython)
-2.	Paste the .pyd library into your K-Spice install bin64
+1.	Install K-Spice in the usual way from an official installer
+2.	Copy the API file (.pyd) into your K-Spice install bin64
 	«C:\Program Files (x86)\Kongsberg\K-Spice\bin64»
+3.	Make sure that «C:\Program Files (x86)\Kongsberg\K-Spice\bin64» is included in your PYTHONPATH (system variable or venv setup)
+4.	Enjoy!
 
 # Importing the K-Spice Module into Python
 
