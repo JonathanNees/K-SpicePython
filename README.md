@@ -43,5 +43,5 @@ This means you can not interact with the front-end of K-Spice. However, the SimE
 
 ![K-Spice Architecture](SoftwareComponents.svg)
 
-For the full spectrum of available commands and functions refer to the python documentation, that follow the version specific html documentation following the K-Spice python api.
+For the full spectrum of available commands and functions refer to version specific html documentation following the K-Spice Python API.
 docs -> index.html
