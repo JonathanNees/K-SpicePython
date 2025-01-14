@@ -26,7 +26,7 @@ Instead, try starting Python out of the directory ``"C:/Program Files (x86)/Kong
 
 
 
-#Starting and Running K-Spice
+# Starting and Running K-Spice
 In order to get commands from the Python API to K-Spice, K-Spice needs to be launched from the Python script. Models (and sim managers) already running cannot be controlled from Python. Make sure to shut down existing simulations and sim managers first.
 
 ```python
