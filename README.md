@@ -41,7 +41,7 @@ Example scripts can be found in the repository.
 
 # Architecture
 The python API acts as a wrapper for the K-Spice SimulationManager process.
-This means you can not interact with the front-end of K-Spice. However, the SimExplorer.exe process can be started in addition to the running python process invoking simulation manager, and you can connect to the simulation manager in the usual way through tcp/ip on port 16000.
+This means you can not interact with the SimExplorer (front-end application) from Python. However, the SimExplorer can be started subsequent to starting a python process that is invoking simulation manager through the api, and then connect in the usual way through tcp/ip on port 16000.
 
 ![K-Spice Architecture](SoftwareComponents.svg)
 
